@@ -31,7 +31,7 @@ def signup_func(request):
 
             new_user.save()
 
-            return redirect("home")
+            return redirect("signin")
     else:
         form = SignUpForm()
     return render(request, 'signup.html', {'form': form})
